@@ -1,0 +1,61 @@
+.grid-areas {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    'one two three'
+    'one four three'
+    'one five six';
+}
+
+.grid-areas .one {
+  grid-area: one;
+}
+
+.grid-areas .two {
+  grid-area: two;
+}
+
+.grid-areas .three {
+  grid-area: three;
+}
+
+.grid-areas .four {
+  grid-area: four;
+}
+
+.grid-areas .five {
+  grid-area: five;
+}
+
+.grid-areas .six {
+  grid-area: six;
+}
+
+.mini-page {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas:
+    'header main aside'
+    'header main .'
+    'footer footer footer';
+}
+
+.mini-page header {
+  grid-area: header;
+}
+
+.mini-page header a {
+  display: block;
+}
+
+.mini-page main {
+  grid-area: main;
+}
+
+.mini-page aside {
+  grid-area: aside;
+}
+
+.mini-page footer {
+  grid-area: footer;
+}

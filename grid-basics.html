@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Basics | W7 - CSS Grid</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/grid-basics.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="masthead no-print" role="banner">
+      <div class="container">
+        <a href="/" class="logo">
+          <strong>W7 - CSS Grid</strong>
+        </a>
+        <nav id="nav" role="navigation">
+          <ul>
+            <li>
+              <a aria-current="page" href="./grid-basics.html">Grid Basics</a>
+            </li>
+            <li><a href="./grid-areas.html">Grid Areas</a></li>
+            <li><a href="./grid-auto-flow.html">Grid Auto Flow</a></li>
+            <li><a href="./grid-layouts.html">Grid Layouts</a></li>
+          </ul>
+        </nav>
+        <a class="nav-toggle" href="#nav" aria-label="Click to open mobile nav">
+          <span class="tog top"></span>
+          <span class="tog middle"></span>
+          <span class="tog bottom"></span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main" role="main">
+      <section>
+        <div class="container">
+          <h1>Grid Basics</h1>
+
+          <!-- ---------- TUTORIAL CONTENT ---------- -->
+
+          <h2 class="padding-t">Basic Grid</h2>
+
+          <div class="parent-styles grid-basic">
+            <div class="grid-item one">1</div>
+            <div class="grid-item two">2</div>
+            <div class="grid-item three">3</div>
+            <div class="grid-item four">4</div>
+          </div>
+
+          <h2 class="padding-t">Grid Alignment</h2>
+          <p>
+            We can take advantage of the <code>align-items</code> and
+            <code>align-self</code> CSS properties to adjust our layout.
+          </p>
+          <div class="parent-styles grid-alignment">
+            <div class="grid-item one">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              adipisci aliquam ut enim necessitatibus rem animi numquam
+              architecto ad, quidem impedit quae dolores, deserunt praesentium
+              reprehenderit laboriosam natus voluptate! Iure!
+            </div>
+            <div class="grid-item two">
+              Illum doloremque expedita aliquam. Temporibus, facilis, magni, non
+              expedita laboriosam illum quo eveniet consequatur amet autem
+              porro!
+            </div>
+            <div class="grid-item three">
+              Quos minima ab est maxime fugiat quidem, error sapiente labore
+              quod eveniet similique fuga, perspiciatis sequi! Iste, earum!
+              Omnis eos neque fugit non a ab ut quis tenetur impedit aut.
+            </div>
+            <div class="grid-item four">
+              Adipisci nemo dolore deleniti non reiciendis delectus earum
+              aliquid tenetur nobis.
+            </div>
+            <div class="grid-item five">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur itaque ab a quae error rem aut illum aperiam repellat
+              necessitatibus, facilis sit minima, ad quisquam atque unde. Dolor,
+              atque rem.
+            </div>
+            <div class="grid-item six">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              nihil quo mollitia, distinctio deleniti ipsam maxime. Ab, quam
+              veritatis voluptate vitae fugiat, nostrum cumque at quibusdam et
+              praesentium, error a?Animi suscipit reprehenderit numquam veniam
+              eveniet, at sapiente, qui ipsa veritatis nihil expedita
+              repellendus totam accusantium modi nam minus consectetur. Pariatur
+              voluptatem dolorum vel facilis consectetur minus ipsum magnam
+              fuga.
+            </div>
+          </div>
+
+          <h2 class="padding-t">
+            Item Placement and Spanning Across Columns &amp; Rows
+          </h2>
+          <p>
+            By using the <code>grid-column</code> and <code>grid-row</code> we
+            can adjust how our grid items sit within the columns and rows of our
+            grid.
+          </p>
+          <div class="parent-styles grid-placement">
+            <div class="grid-item one">
+              <h3>Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur adipisci aliquam ut enim necessitatibus rem animi
+                numquam architecto ad, quidem impedit quae dolores, deserunt
+                praesentium reprehenderit laboriosam natus voluptate! Iure!
+              </p>
+            </div>
+            <div class="grid-item two">
+              <h3>Heading</h3>
+              <p>
+                Illum doloremque expedita aliquam. Temporibus, facilis, magni,
+                non expedita laboriosam illum quo eveniet consequatur amet autem
+                porro!
+              </p>
+            </div>
+            <div class="grid-item three">
+              <h3>Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur itaque ab a quae error rem aut illum aperiam
+                repellat necessitatibus, facilis sit minima, ad quisquam atque
+                unde. Dolor, atque rem.
+              </p>
+            </div>
+            <div class="grid-item four">
+              <h3>Heading</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptas nihil quo mollitia, distinctio deleniti ipsam maxime.
+                Ab, quam veritatis voluptate vitae fugiat, nostrum cumque at
+                quibusdam et praesentium, error a?Animi suscipit reprehenderit
+                numquam veniam eveniet, at sapiente, qui ipsa veritatis nihil
+                expedita repellendus totam accusantium modi nam minus
+                consectetur. Pariatur voluptatem dolorum vel facilis consectetur
+                minus ipsum magnam fuga.
+              </p>
+            </div>
+            <div class="grid-item five">
+              <h3>Heading</h3>
+              <p>
+                Quos minima ab est maxime fugiat quidem, error sapiente labore
+                quod eveniet similique fuga, perspiciatis sequi! Iste, earum!
+                Omnis eos neque fugit non a ab ut quis tenetur impedit aut.
+              </p>
+            </div>
+            <div class="grid-item six">
+              <h3>Heading</h3>
+              <p>
+                Adipisci nemo dolore deleniti non reiciendis delectus earum
+                aliquid tenetur nobis.
+              </p>
+            </div>
+          </div>
+
+          <!-- ---------- END TUTORIAL CONTENT ---------- -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p>
+          <a
+            href="https://mad9013.github.io/F2022/modules/week7/"
+            target="_blank"
+            >Week 7 Content</a
+          >
+        </p>
+        <small
+          >Created for
+          <a href="https://mad9013.github.io/F2022/">MAD9013 course</a> and free
+          for any use.</small
+        >
+      </div>
+    </footer>
+    <div class="click-to-close"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

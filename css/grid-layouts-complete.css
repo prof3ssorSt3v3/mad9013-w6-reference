@@ -1,0 +1,186 @@
+img {
+  width: 100%;
+  display: block;
+}
+
+/* ---------- Grid System ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.xs-1 {
+  grid-column: span 12;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .s-1 {
+    grid-column: span 12;
+  }
+
+  .s-1-2 {
+    grid-column: span 6;
+  }
+
+}
+
+@media only screen and (min-width: 45em) {
+
+  .m-1 {
+    grid-column: span 12;
+  }
+
+  .m-1-2 {
+    grid-column: span 6;
+  }
+
+  .m-1-3 {
+    grid-column: span 4;
+  }
+
+  .m-2-3 {
+    grid-column: span 8;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .l-1 {
+    grid-column: span 12;
+  }
+
+  .l-1-2 {
+    grid-column: span 6;
+  }
+
+  .l-1-3 {
+    grid-column: span 4;
+  }
+
+  .l-1-4 {
+    grid-column: span 3;
+  }
+
+}
+
+/* ---------- Card Grid ---------- */
+
+.grid-cards {
+  gap: 1rem;
+}
+
+.grid-cards .col {
+  display: flex;
+}
+
+.grid-cards .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-cards .card p {
+  flex-grow: 1;
+}
+
+/* ---------- Split Content ---------- */
+
+.split-content {
+  --cols: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+@media only screen and (min-width: 45em) {
+  .split-content {
+    --cols: 3;
+  }
+
+  .split-content-text {
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  .split-content {
+    --cols: 2;
+  }
+
+  .split-content-text {
+    grid-column: span 1;
+  }
+
+}
+
+/* ---------- Grid Container ---------- */
+
+.container {
+  width: min(70em, 100%);
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container--grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.container--grid > * {
+  grid-column: span 12;
+}
+
+/* .container--grid > h2, */
+/* .container--grid > p, */
+.container--grid .contained-text {
+  grid-column: span 8;
+}
+
+.container--grid .contained-text--center {
+  grid-column: 5 / span 8;
+}
+
+/* ---------- Grid Container Full Width ---------- */
+
+.grid-container-full {
+  display: grid;
+  grid-template-columns: 1fr min(70em, 100%) 1fr;
+}
+
+/*
+This will automatically apply to all
+direct children of .grid-container-full
+*/
+.grid-container-full > * {
+  grid-column: 2 / 3;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*
+
+Alternatively you could put it on a class.
+
+.contained {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  grid-column: 2 / 3;
+}
+*/
+
+.grid-container-full .full-width {
+  grid-column: 1 / 4;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.full-width img {
+  max-height: 30rem;
+  object-fit: cover;
+}

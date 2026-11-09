@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Areas | W7 - CSS Grid</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/grid-auto-flow.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="masthead no-print" role="banner">
+      <div class="container">
+        <a href="/" class="logo">
+          <strong>W7 - CSS Grid</strong>
+        </a>
+        <nav id="nav" role="navigation">
+          <ul>
+            <li><a href="./grid-basics.html">Grid Basics</a></li>
+            <li><a href="./grid-areas.html">Grid Areas</a></li>
+            <li>
+              <a aria-current="page" href="./grid-auto-flow.html"
+                >Grid Auto Flow</a
+              >
+            </li>
+            <li><a href="./grid-layouts.html">Grid Layouts</a></li>
+          </ul>
+        </nav>
+        <a class="nav-toggle" href="#nav" aria-label="Click to open mobile nav">
+          <span class="tog top"></span>
+          <span class="tog middle"></span>
+          <span class="tog bottom"></span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main" role="main">
+      <section>
+        <div class="container">
+          <h1>Grid Auto Flow</h1>
+
+          <!-- ---------- TUTORIAL CONTENT ---------- -->
+
+          <h2 class="padding-t">Changing Item Flow</h2>
+          <p class="text-wrap">
+            The <code>grid-auto-flow</code> allows us to change the flow of our
+            grid items.
+          </p>
+          <div class="parent-styles grid-auto-flow">
+            <div class="grid-item one">1</div>
+            <div class="grid-item two">2</div>
+            <div class="grid-item three">3</div>
+            <div class="grid-item four">4</div>
+            <div class="grid-item five">5</div>
+            <div class="grid-item six">6</div>
+            <div class="grid-item seven">7</div>
+            <div class="grid-item eight">8</div>
+            <div class="grid-item nine">9</div>
+          </div>
+
+          <h2 class="padding-t">Grid of Images</h2>
+          <p class="text-wrap">
+            We can use <code>grid-auto-flow</code> to make a great grid of
+            varying sized images.
+          </p>
+          <div class="parent-styles grid-images">
+            <img
+              class="dog-1"
+              src="https://placedog.net/100/100?random"
+              alt="Dog 1"
+            />
+            <img
+              class="dog-2"
+              src="https://placedog.net/200/200?random"
+              alt="Dog 2"
+            />
+            <img
+              class="dog-3"
+              src="https://placedog.net/300/300?random"
+              alt="Dog 3"
+            />
+            <img
+              class="dog-4"
+              src="https://placedog.net/400/400?random"
+              alt="Dog 4"
+            />
+            <img
+              class="dog-5"
+              src="https://placedog.net/500/500?random"
+              alt="Dog 5"
+            />
+            <img
+              class="dog-6"
+              src="https://placedog.net/600/600?random"
+              alt="Dog 6"
+            />
+            <img
+              class="dog-7"
+              src="https://placedog.net/700/700?random"
+              alt="Dog 7"
+            />
+            <img
+              class="dog-8"
+              src="https://placedog.net/800/800?random"
+              alt="Dog 8"
+            />
+            <img
+              class="dog-9"
+              src="https://placedog.net/900/900?random"
+              alt="Dog 9"
+            />
+            <img
+              class="dog-10"
+              src="https://placedog.net/1000/1000?random"
+              alt="Dog 10"
+            />
+            <img
+              class="dog-11"
+              src="https://placedog.net/1100/1100?random"
+              alt="Dog 11"
+            />
+            <img
+              class="dog-12"
+              src="https://placedog.net/1200/1200?random"
+              alt="Dog 12"
+            />
+            <img
+              class="dog-13"
+              src="https://placedog.net/1300/1300?random"
+              alt="Dog 13"
+            />
+            <img
+              class="dog-14"
+              src="https://placedog.net/1400/1400?random"
+              alt="Dog 14"
+            />
+            <img
+              class="dog-15"
+              src="https://placedog.net/1500/1500?random"
+              alt="Dog 15"
+            />
+          </div>
+
+          <!-- ---------- END TUTORIAL CONTENT ---------- -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p>
+          <a
+            href="https://mad9013.github.io/F2022/modules/week7/"
+            target="_blank"
+            >Week 7 Content</a
+          >
+        </p>
+        <small
+          >Created for
+          <a href="https://mad9013.github.io/F2022/">MAD9013 course</a> and free
+          for any use.</small
+        >
+      </div>
+    </footer>
+    <div class="click-to-close"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
