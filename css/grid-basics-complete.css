@@ -24,17 +24,14 @@
   /* justify-self: flex-start; */
 }
 
-
 .grid-alignment {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* align-items: center; */
+  align-items: center;
   gap: 1rem;
 }
 
-
 .grid-alignment .one {
-
 }
 
 .grid-alignment .two {
@@ -42,7 +39,6 @@
 }
 
 .grid-alignment .three {
-
 }
 
 .grid-alignment .four {
@@ -50,11 +46,9 @@
 }
 
 .grid-alignment .five {
-  
 }
 
 .grid-alignment .six {
-
 }
 
 .grid-placement {
@@ -62,7 +56,6 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
 }
-
 
 .grid-placement .one {
   grid-column: 1 / 3;
